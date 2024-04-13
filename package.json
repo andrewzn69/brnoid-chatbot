@@ -1,13 +1,17 @@
 {
   "name": "brnoid-chatbot",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Chatbot for BrnoID website",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
+    "prettier": "prettier --write .",
     "start": "next start",
     "lint": "next lint"
   },
+  "author": "Ondrej Zeman<ondrejzeman23@gmail.com>",
+  "licence": "MIT",
   "dependencies": {
     "feather-icons-react": "^0.7.0",
     "next": "14.2.1",
@@ -20,6 +24,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.1",
+    "prettier": "^3.2.5",
     "sass": "^1.75.0",
     "typescript": "^5"
   }
