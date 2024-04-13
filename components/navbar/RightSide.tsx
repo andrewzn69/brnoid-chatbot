@@ -25,7 +25,7 @@ const RightSide: React.FC<RightSideProps> = ({ strokeWidth = 2 }) => {
 			</li>
 			<li className={styles['nav-item']}>
 				<Link href='#'>
-					<FeatherIcon icon='align-left' className={`${styles['icon']} ${styles['mobile']}`} size="19" strokeWidth={strokeWidth} />
+					<FeatherIcon icon='align-left' className={`${styles['icon']} ${styles['icon-right']} ${styles['mobile']}`} size="19" strokeWidth={strokeWidth} />
 				</Link>
 			</li>
 		</ul>
