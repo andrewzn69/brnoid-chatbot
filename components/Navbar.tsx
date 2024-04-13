@@ -4,7 +4,7 @@ import React from 'react'
 import styles from '../styles/navbar/Navbar.module.scss'
 import Logo from './navbar/Logo'
 import LeftSide from './navbar/LeftSide'
-// import RightSide from './navbar/RightSide'
+import RightSide from './navbar/RightSide'
 
 const Navbar: React.FC = () => {
 	return (
@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 				<Logo />
 				<LeftSide />
 			</div>
-			{/* <RightSide /> */}
+			<RightSide />
 		</nav>
 	)
 }
