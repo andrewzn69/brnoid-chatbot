@@ -1,0 +1,23 @@
+.logo {
+	position: fixed;
+	height: 40px;
+	width: 100px;
+	transition: opacity 0.5s ease;
+	padding: 0 0 5px 0;
+
+	@media (max-width: 768px) {
+		width: 54px;
+		padding: 0 0 0 4px;
+	}
+}
+
+.logoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.logo.hidden {
+	opacity: 0;
+}
