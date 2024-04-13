@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-// import Main from '../components/Main';
+import Main from '../components/Main';
 // import Footer from '../components/Footer';
 import '../styles/globals.scss';
 
@@ -11,8 +11,8 @@ export default function HomePage() {
 			<div>
 				<Navbar />
 				<Hero />
-				{/*<Main />
-			<Footer /> */}
+				<Main />
+				{/* <Footer /> */}
 			</div>
 		</div>
 	);
