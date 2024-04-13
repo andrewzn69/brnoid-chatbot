@@ -1,0 +1,23 @@
+.left-side {
+	display: flex;
+	list-style: none;
+	margin-left: 110px;
+}
+
+.nav-item a {
+	display: flex;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 2.2rem;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.left-side {
+		display: none;
+	}
+}
+
+.icon {
+	margin-left: 5px;
+}
