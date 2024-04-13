@@ -13,7 +13,7 @@ const LeftSide: React.FC<LeftSideProps> = ({ strokeWidth = 2.5 }) => {
 			<li className={styles['nav-item']}>
 				<Link href="#">
 					Produkty a služby
-					<FeatherIcon icon='chevron-down' className={styles['icon']} size="10" strokeWidth={strokeWidth} />
+					<FeatherIcon icon='chevron-down' className={styles['icon']} size="12" strokeWidth={strokeWidth} />
 				</Link>
 			</li>
 			<li className={styles['nav-item']}>
