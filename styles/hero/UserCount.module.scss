@@ -51,3 +51,9 @@
 	color: #706F6C;
 	font-size: 14px;
 }
+
+@media (max-width: 768px) {
+	.user-count {
+		display: none;
+	}
+}

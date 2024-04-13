@@ -4,7 +4,7 @@ import React from 'react'
 import styles from '../styles/hero/Hero.module.scss'
 import PromoText from './hero/leftside/PromoText'
 import UserCount from './hero/leftside/UserCount'
-// import ImageSlider from './hero/leftside/ImageSlider'
+import ImageSlider from './hero/ImageSlider'
 
 const Hero: React.FC = () => {
 	return (
@@ -13,7 +13,9 @@ const Hero: React.FC = () => {
 				<div className={styles['left-side']}>
 					<PromoText />
 					<UserCount />
-					{/* <ImageSlider /> */}
+				</div>
+				<div className={styles['right-side']}>
+					<ImageSlider />
 				</div>
 			</div>
 		</div>
