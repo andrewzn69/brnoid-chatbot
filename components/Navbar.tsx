@@ -8,7 +8,7 @@ import Logo from './navbar/Logo'
 
 const Navbar: React.FC = () => {
 	return (
-		<nav className={styles.navbar}>
+		<nav className={styles['navbar-container']}>
 			<Logo />
 			{/* <LeftSide /> */
 			/* <RightSide /> */}
