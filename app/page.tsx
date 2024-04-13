@@ -8,10 +8,12 @@ import '../styles/globals.scss';
 export default function HomePage() {
 	return (
 		<div>
-			<Navbar />
-			<Hero />
-			{/*<Main />
+			<div>
+				<Navbar />
+				<Hero />
+				{/*<Main />
 			<Footer /> */}
+			</div>
 		</div>
 	);
 }
