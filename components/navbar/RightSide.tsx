@@ -15,7 +15,15 @@ const RightSide: React.FC<RightSideProps> = ({ strokeWidth = 2 }) => {
 				<Link href='#' className={styles['desktop']}>English</Link>
 			</li>
 			<li className={styles['nav-item']}>
-				<FeatherIcon icon='user' className={styles['icon']} size="25" strokeWidth={strokeWidth} />
+				<Link href="http://localhost:3000/chat" passHref>
+					<FeatherIcon icon='help-circle' className={styles['icon']} size="25" strokeWidth={strokeWidth} />
+				</Link>
+				<Link href="http://localhost:3000/chat" passHref className={styles['desktop']}>Chatbot</Link>
+			</li>
+			<li className={styles['nav-item']}>
+				<Link href='#'>
+					<FeatherIcon icon='user' className={styles['icon']} size="25" strokeWidth={strokeWidth} />
+				</Link>
 				<Link href='#' className={styles['desktop']}>Přihlásit se</Link>
 			</li>
 			<li className={styles['nav-item']}>
@@ -28,7 +36,7 @@ const RightSide: React.FC<RightSideProps> = ({ strokeWidth = 2 }) => {
 					<FeatherIcon icon='align-left' className={`${styles['icon']} ${styles['icon-right']} ${styles['mobile']}`} size="19" strokeWidth={strokeWidth} />
 				</Link>
 			</li>
-		</ul>
+		</ul >
 	);
 }
 

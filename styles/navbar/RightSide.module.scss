@@ -2,7 +2,7 @@
 	display: flex;
 	list-style: none;
 	margin-left: auto;
-	align-items: center
+	align-items: center;
 }
 
 .nav-item {
@@ -14,10 +14,16 @@
 	font-weight: 600;
 	white-space: nowrap;
 	overflow: hidden;
+	transition: color 0.4s ease;
+
+	&:hover {
+		color: #CF3231;
+	}
 }
 
 .mobile {
 	display: none;
+	font-size: 50px;
 }
 
 @media (max-width: 768px) {
@@ -31,4 +37,8 @@
 		font-size: 14px;
 	}
 
+}
+
+.icon {
+	margin-right: 5px;
 }

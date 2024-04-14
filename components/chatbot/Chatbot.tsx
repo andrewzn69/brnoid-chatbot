@@ -40,6 +40,10 @@ export default function HomePage() {
 	return (
 		<div style={{ width: '100%', height: '700px', flex: 1 }}>
 			<DeepChat
+				request={{
+					"url": "http://10.147.20.141:5118/AIPrompt/AskAI",
+					"method": "POST",
+				}}
 				chatStyle={{
 					display: 'block',
 					width: 'inherit',
@@ -63,7 +67,7 @@ export default function HomePage() {
 				textInput={{
 					"styles": {
 						"container": {
-							"backroundColor": "pink",
+							"backroundColor": "red",
 							"borderRadius": "0px",
 							"bowShadow": "none",
 							"width": "100%",
@@ -76,13 +80,14 @@ export default function HomePage() {
 					"submit": {
 						"container": {
 							"default": {
-								"backgroundColor": "#F1F3F5",
+								"backgroundColor": "#CF3231",
 								"marginBottom": "0.1em",
 								"marginLeft": "10px",
 								"borderRadius": "0px",
+								"flexShrink": "0",
 							},
-							"hover": { "backgroundColor": "#4d00dc" },
-							"click": { "backgroundColor": "#3b00a8" },
+							"hover": { "backgroundColor": "#A62827" },
+							"click": { "backgroundColor": "#962827" },
 						},
 						"text": {
 							"content": "Odeslat",
@@ -92,9 +97,9 @@ export default function HomePage() {
 					"loading": { "container": { "default": { "backgroundColor": "#afafaf" } } },
 					"stop": {
 						"container": {
-							"default": { "backgroundColor": "#919191" },
-							"hover": { "backgroundColor": "#8c8c8c" },
-							"click": { "backgroundColor": "#818181" }
+							"default": { "backgroundColor": "red" },
+							"hover": { "backgroundColor": "red" },
+							"click": { "backgroundColor": "red" }
 						},
 						"text": { "content": "Stop" }
 					},
@@ -107,11 +112,7 @@ export default function HomePage() {
 				images={true}
 				camera={true}
 				mixedFiles={true}
-				request={{
-					"url": "http://10.147.20.141:5118/Upload/upload",
-					"method": "POST",
-				}}
-				style={{ borderRadius: '10px' }}
+				style={{ borderRadius: '0px' }}
 				textInput={{ placeholder: { text: 'Doporuč mi sportovní akci.' } }}
 				initialMessages={initialMessages}
 			/>
