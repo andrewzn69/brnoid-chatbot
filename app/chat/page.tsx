@@ -5,6 +5,22 @@
 // import {DeepChat as DeepChatCore} from 'deep-chat'; <- type
 import styles from '../../styles/chatbot/Chatbot.module.scss';
 import dynamic from 'next/dynamic';
+import axios from 'axios';
+
+const instance = axios.create();
+
+type Request = {
+	instance: any;
+}
+
+instance.interceptors.request.use((config) => {
+	console.log('Request: ', config);
+	console.log('Request Data: ', config.data);
+	return config;
+}, (error) => {
+	console.log('Request Error: ', error);
+	return Promise.reject(error);
+});
 
 export default function Home() {
 	const initialMessages = [
@@ -29,7 +45,7 @@ export default function Home() {
 				<DeepChat
 					request={{
 						"url": "http://10.147.20.141:5118/AIPrompt/AskAI",
-						"method": "POST"
+						"method": "POST",
 					}}
 					style={{ borderRadius: '10px' }}
 					textInput={{ placeholder: { text: 'Welcome to the demo!' } }}
